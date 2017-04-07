@@ -1,19 +1,29 @@
 public class Flappy {
-    public int colour; //hex
-	
+    private int colour; //hex
+	private String name; //you can name your flappie omfg 
 	public Flappy(){ //constructor
 		this.colour = 0;
+		this.name = "lol";
 	}
 	//metodos: setters y getters
 	public void setColour(int col){
 		this.colour = col;
 	}
+	public void setName(String neim){
+		this.name = neim;
+	}
 	public int getColour(){
 		return this.colour;
+	}
+	public String getName(){
+		return this.name;
 	}
 	//metodos
 	public void volar(){
 		System.out.println("Estoy volando!!");
+	}
+	public void hablar(){
+		System.out.println("Mi nombre es " + this.name);
 	}
 
 }
