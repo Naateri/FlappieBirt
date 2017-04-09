@@ -1,9 +1,12 @@
 public class Flappy {
     private int colour; //hex
 	private String name; //you can name your flappie omfg 
+	private boolean status; //true = vivo, false = muerto
+	
 	public Flappy(){ //constructor
 		this.colour = 0;
 		this.name = "lol";
+		this.status = true;
 	}
 	//metodos: setters y getters
 	public void setColour(int col){
@@ -24,6 +27,13 @@ public class Flappy {
 	}
 	public void hablar(){
 		System.out.println("Mi nombre es " + this.name);
+	}
+	public void checkStatus(){
+		if (this.status){
+			System.out.println("Vivo!");
+		}else{
+			System.out.println("Muerto :(");
+		}
 	}
 
 }
