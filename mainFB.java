@@ -26,6 +26,7 @@ public class mainFB extends Flappy {
 		myFlappy.setName(name);
 		myFlappy.volar();
 		myFlappy.hablar();
+		myFlappy.checkStatus();
 	}
 
 }
